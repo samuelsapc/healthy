@@ -73,6 +73,12 @@ const data: Pacientes[] = [
     nombre: "Cesar Corsini",
     diagnostico: "Gripe ligera",
   },
+  {
+    id: "V27629356",
+    identificacion: "V27629356",
+    nombre: "Pedro Peladera",
+    diagnostico: "Esquizofrenia",
+  },
   
 ]
  
@@ -194,7 +200,7 @@ export function TablaPacientes() {
           placeholder="Buscar"
           value={(table.getColumn("nombre")?.getFilterValue() as string) ?? ""}
           onChange={(event) =>
-            table.getColumn("nombre")?.setFilterValue(event.target.value)
+            table.getColumn("nombre")?.setFilterValue(event.target.value) 
           }
           className="max-w-sm"
         />

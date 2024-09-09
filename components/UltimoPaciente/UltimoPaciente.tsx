@@ -1,6 +1,6 @@
 import { Building } from "lucide-react";
 import { CustomIcon } from "../CustomIcon";
-import { TablaPacientes } from "../TablaPacientes";
+import { TablaPacientes } from "../PatientTable";
 
 export function UltimoPaciente() {
   return (

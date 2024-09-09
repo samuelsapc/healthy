@@ -46,10 +46,10 @@ export default function Home() {
                 <UltimoPaciente />
                 <CrecimientoPacientes />
             </div>
-            <div className="flex-col xl:flex xl:flex-row gap-y-4 md:gap-y-0 mt-12 md:mb-10 justify-center">
+            {/* <div className="flex-col xl:flex xl:flex-row gap-y-4 md:gap-y-0 mt-12 md:mb-10 justify-center">
                 <p>Total de pacientes</p>
                 <p>Lista de tratamientos</p>
-            </div>
+            </div> */}
         </div>
     )
 }

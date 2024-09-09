@@ -1,7 +1,8 @@
 import { authMiddleware } from '@clerk/nextjs/server'
 
-export default authMiddleware()
-
+export default authMiddleware({
+  publicRoutes: ['/', '/pacientes'],
+})
 export const config = {
   matcher: [
     // Skip Next.js internals and all static files, unless found in search params

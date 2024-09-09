@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/dialog"
 import { CirclePlus } from "lucide-react"
 import { useState } from "react"
+import { FromCreatePatient } from "../FormCreatePatient"
 
 export function HeaderPacientes() {
     const [openModalCreate, setOpenModalCreate] = useState(false)
@@ -21,13 +22,14 @@ export function HeaderPacientes() {
                 <DialogTrigger asChild>
                     <Button> Crear Paciente</Button>
                 </DialogTrigger>
-                <DialogContent>
+                <DialogContent className="w-160 sm:w-full sm:max-w-lg">
                 <DialogHeader>
                     <DialogTitle>Creacion de paciente</DialogTitle>
                     <DialogDescription>
                         Ingresa los datos del paciente
                     </DialogDescription>
                 </DialogHeader>
+                <FromCreatePatient/>
                 </DialogContent>
             </Dialog>
         </div>
